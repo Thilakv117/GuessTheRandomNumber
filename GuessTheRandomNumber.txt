@@ -1,0 +1,21 @@
+import java.util.*;
+class Main
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    Random ra = new Random();
+    int random = ra.nextInt(100);
+    System.out.print("Guess the Number: ");
+    int Num = sc.nextInt();
+    if(random == Num)
+    {
+      System.out.print("You guessed it wrong");
+    }
+    else
+    {
+      System.out.println("You guessed it wrong");
+    }
+    System.out.println("the Random number is: " + random);
+  }
+}
